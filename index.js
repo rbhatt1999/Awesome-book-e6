@@ -10,15 +10,15 @@ const section = document.querySelectorAll('section');
 const books = new BooksList();
 submit.addEventListener('click', (event) => {
   event.preventDefault();
-  const title = titleCase(formInput[0].value);
-  const author = titleCase(formInput[1].value);
+  const title = formInput[0].value;
+  const author = formInput[1].value;
   formInput[0].value = '';
   formInput[1].value = '';
   const id = Date.now();
   if (title === '' || author === '') {
     errorMsgFuction();
   } else {
-    books.addBook(title, author, id);
+    books.addBook(titleCase(title), titleCase(author), titleCase(id));
     errorMsg.innerHTML = '';
   }
 });
