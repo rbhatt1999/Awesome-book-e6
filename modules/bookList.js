@@ -28,7 +28,7 @@ export default class BooksList {
     this.remove();
   }
 
-  remove = ()=> {
+  remove = () => {
     const remove = document.querySelectorAll('.remove');
     remove.forEach((item) => {
       item.addEventListener('click', () => {
