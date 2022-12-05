@@ -30,7 +30,7 @@ if (localStorage.getItem('books')) {
 }
 
 dateTime();
-setInterval(dateTime, 2000);
+setInterval(dateTime, 1000);
 
 navigation[0].addEventListener('click', () => {
   section[1].classList.remove('d-hide');
