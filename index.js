@@ -1,6 +1,7 @@
 import BooksList from "./modules/bookList.js";
 import errorMsgFuction from "./modules/errorMsg.js";
 import titleCase from "./modules/titleCase.js";
+import dateTime from "./modules/dateTime.js";
 
 const submit = document.querySelector('#submit');
 const formInput = document.querySelectorAll('form input');
@@ -29,14 +30,9 @@ if (localStorage.getItem('books')) {
   });
 }
 
-function refreshTime() {
-  const timeDisplay = document.getElementById('time');
-  const dateString = new Date().toLocaleString();
-  const formattedString = dateString.replace(',', '-');
-  timeDisplay.textContent = formattedString;
-}
-refreshTime();
-setInterval(refreshTime, 1000);
+dateTime();
+setInterval(dateTime, 2000);
+
 navigation[0].addEventListener('click', () => {
   section[1].classList.remove('d-hide');
   section[2].classList.add('d-hide');
