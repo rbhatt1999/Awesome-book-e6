@@ -4,7 +4,7 @@ export default class BooksList {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
   }
 
-  addBook(title, author, id) {
+  addBook = (title, author, id) => {
     if (this.books) {
       bookList.classList.add('black-border');
     }
@@ -16,7 +16,7 @@ export default class BooksList {
     this.display(this.title, this.author, this.id);
   }
 
-  display(title, author, id) {
+  display = (title, author, id) => {
     if (this.books) {
       bookList.classList.add('black-border');
     }
@@ -28,7 +28,7 @@ export default class BooksList {
     this.remove();
   }
 
-  remove() {
+  remove = ()=> {
     const remove = document.querySelectorAll('.remove');
     remove.forEach((item) => {
       item.addEventListener('click', () => {
