@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rbhatt1999/awesome-book-e6/issues"
   },
-  "homepage": "https://github.com/rbhatt1999/awesome-book-e6#readme"
+  "homepage": "https://github.com/rbhatt1999/awesome-book-e6#readme",
+  "dependencies": {
+    "luxon": "^3.1.1"
+  }
 }
