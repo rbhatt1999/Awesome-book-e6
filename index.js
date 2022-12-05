@@ -19,7 +19,7 @@ submit.addEventListener('click', (event) => {
   if (title === '' || author === '') {
     errorMsgFuction();
   } else {
-    books.addBook(titleCase(title), titleCase(author), titleCase(id));
+    books.addBook(titleCase(title), titleCase(author), id);
   }
 });
 
