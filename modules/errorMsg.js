@@ -1,9 +1,9 @@
 const errorMsg = document.querySelector('.error-msg');
-export default () =>{
+export default () => {
   errorMsg.classList.remove('d-hide');
   errorMsg.innerHTML = 'Please fill the details';
-  setTimeout(()=>{
+  setTimeout(() => {
     errorMsg.classList.add('d-hide');
     errorMsg.innerHTML = '';
-  },2000);
-}
+  }, 2000);
+};

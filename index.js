@@ -1,7 +1,7 @@
-import BooksList from "./modules/bookList.js";
-import errorMsgFuction from "./modules/errorMsg.js";
-import titleCase from "./modules/titleCase.js";
-import dateTime from "./modules/dateTime.js";
+import BooksList from './modules/bookList.js';
+import errorMsgFuction from './modules/errorMsg.js';
+import titleCase from './modules/titleCase.js';
+import dateTime from './modules/dateTime.js';
 
 const submit = document.querySelector('#submit');
 const formInput = document.querySelectorAll('form input');
@@ -20,7 +20,6 @@ submit.addEventListener('click', (event) => {
     errorMsgFuction();
   } else {
     books.addBook(titleCase(title), titleCase(author), titleCase(id));
-    errorMsg.innerHTML = '';
   }
 });
 
